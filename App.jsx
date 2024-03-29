@@ -7,7 +7,6 @@ import AuthMember from './src/containers/AuthMember';
 function App() {
   return (
     <AuthMember />
-    
   );
 }
 
