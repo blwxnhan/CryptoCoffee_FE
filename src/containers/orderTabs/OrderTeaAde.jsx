@@ -4,7 +4,7 @@ import {
     StyleSheet 
 } from "react-native";
 
-import CryptoCoffeeButton from "../components/CryptoCoffeeButton";
+import CryptoCoffeeButton from "../../components/CryptoCoffeeButton";
 
 const OrderTeaAde = () => {
     return(

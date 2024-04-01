@@ -4,14 +4,14 @@ import {
     StyleSheet 
 } from "react-native";
 
-import CryptoCoffeeButton from "../components/CryptoCoffeeButton";
+import CryptoCoffeeButton from "../../components/CryptoCoffeeButton";
 
-const OrderCoffee = () => {
+const OrderNonCoffee = () => {
     return(
         <View style={styles.buttonContainer}>
-            <CryptoCoffeeButton title="브루드 커피"/>
-            <CryptoCoffeeButton title="카페라떼"/>
-        </View>    
+            <CryptoCoffeeButton title="핫초코"/>
+            <CryptoCoffeeButton title="허니밀크티"/>
+        </View>       
     );
 }
 
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default OrderCoffee;
+export default OrderNonCoffee;

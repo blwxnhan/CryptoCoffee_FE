@@ -12,7 +12,7 @@ const Home = () => {
   return(
     <SafeAreaView>
       <View style={styles.topContainer}>
-        <Text style={{ fontSize: 26, fontWeight: 'bold' }}> CryptoCoffee </Text>
+        <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
       </View>    
 
       <View style={styles.buttonContainer}> 

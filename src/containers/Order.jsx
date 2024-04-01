@@ -13,7 +13,7 @@ const Order = () => {
         <>
             <SafeAreaView />
             <View style={styles.topContainer}>
-                 <Text style={{ fontSize: 26, fontWeight: 'bold' }}> CryptoCoffee </Text>
+                 <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
             </View> 
             <MyTabs />
         </>
@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
         marginTop: 20,
         marginLeft: 20,
         marginRight: 20,
-        marginBottom: 50,
-        flexDirection: 'row' 
+        marginBottom: 40,
+        flexDirection: 'row',
     },
 });
 
