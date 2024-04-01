@@ -1,32 +1,17 @@
 import React from 'react';
 import {
   SafeAreaView,
-  StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native';
-
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import CustomButton from '../components/CustomButton';
 import CustomInputField from '../components/CustomInputField';
 
-function AuthMember() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+const AuthMember = () => {
   return (
     <SafeAreaView>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-
       <View style={styles.topContainer}>
         <Text style={{ fontSize: 26, fontWeight: 'bold' }}> CryptoCoffee </Text>
       </View>

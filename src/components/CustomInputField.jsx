@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, TextInput, Text, View } from "react-native";
 
-function CustomInputField(props) {
+const CustomInputField = (props) => {
     return(
       <View style={styles.container}>
         <Text style={{fontSize: 15, fontWeight: '400'}}> {props.inputDescription} </Text>
