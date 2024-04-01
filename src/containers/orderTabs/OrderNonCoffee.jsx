@@ -9,8 +9,8 @@ import CryptoCoffeeButton from "../../components/CryptoCoffeeButton";
 const OrderNonCoffee = () => {
     return(
         <View style={styles.buttonContainer}>
-            <CryptoCoffeeButton title="핫초코"/>
-            <CryptoCoffeeButton title="허니밀크티"/>
+            <CryptoCoffeeButton title="핫초코" price="2400원" />
+            <CryptoCoffeeButton title="허니밀크티" price="1800원"/>
         </View>       
     );
 }

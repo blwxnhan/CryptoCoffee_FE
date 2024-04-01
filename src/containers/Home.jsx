@@ -16,8 +16,8 @@ const Home = () => {
       </View>    
 
       <View style={styles.buttonContainer}> 
-        <CryptoCoffeeButton title="주문하기" image="../../asset/Vector.png"/>
-        <CryptoCoffeeButton title="쿠폰사용" image="../../asset/Coupon.png"/>
+        <CryptoCoffeeButton title="주문하기" />
+        <CryptoCoffeeButton title="쿠폰사용" />
       </View>
     </SafeAreaView>
   );
