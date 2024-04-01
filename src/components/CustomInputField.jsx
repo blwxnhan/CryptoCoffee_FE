@@ -1,5 +1,10 @@
 import React from "react";
-import { StyleSheet, TextInput, Text, View } from "react-native";
+import { 
+  StyleSheet, 
+  TextInput, 
+  Text, 
+  View 
+} from "react-native";
 
 const CustomInputField = (props) => {
     return(

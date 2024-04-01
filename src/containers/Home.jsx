@@ -5,6 +5,7 @@ import {
   Text,
   StyleSheet
 } from "react-native"; 
+
 import CryptoCoffeeButton from "../components/CryptoCoffeeButton";
 
 const Home = () => {
@@ -23,17 +24,17 @@ const Home = () => {
 }
 
 const styles = StyleSheet.create({
-    topContainer: {
-      marginTop: 20,
-      marginLeft: 20,
-      marginRight: 20,
-      marginBottom: 50,
-      flexDirection: 'row' 
-    },
+  topContainer: {
+    marginTop: 20,
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 50,
+    flexDirection: 'row' 
+  },
 
-    buttonContainer: {
-      flexDirection: 'row'
-    }
-  });
+  buttonContainer: {
+    flexDirection: 'row'
+  }
+});
 
 export default Home; 
