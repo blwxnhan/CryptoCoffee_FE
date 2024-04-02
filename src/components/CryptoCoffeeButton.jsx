@@ -10,7 +10,7 @@ const CryptoCoffeeButton = (props) => {
     return(
         <TouchableOpacity 
             style={styles.button}
-            onPress={() => (alert("Click!"))}
+            // onPress={() => (alert("Click!"))}
         >
             <Image 
                 style={styles.buttonImage} 
@@ -27,8 +27,9 @@ const styles = StyleSheet.create({
     button: {
         height: 124,
         width: 149,
-        marginLeft: 45,
         borderRadius: 10,
+        marginLeft: 10,
+        marginRight: 10,
         display: 'flex',
         justifyContent: 'center',
         backgroundColor: 'white',
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         height: 50,
         width: 45,
+        marginTop: 10,
         marginBottom: 20,
         alignItems: 'center',
         marginLeft: 50,
@@ -56,7 +58,6 @@ const styles = StyleSheet.create({
         fontSize: 15, 
         fontWeight: 'medium', 
         textAlign: 'center',
-        marginBottom: 5
     },
 
     buttonPriceText: {

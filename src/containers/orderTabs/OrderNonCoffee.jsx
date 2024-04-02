@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     buttonContainer: {
         display: 'flex',
         flexDirection: 'row',
-        marginTop: 26
+        marginTop: 26,
+        justifyContent: 'center'
     }
 });
 

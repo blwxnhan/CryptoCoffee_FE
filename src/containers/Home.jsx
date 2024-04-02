@@ -28,12 +28,13 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 20,
     marginRight: 20,
-    marginBottom: 50,
+    marginBottom: 47,
     flexDirection: 'row' 
   },
 
   buttonContainer: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'center'
   }
 });
 

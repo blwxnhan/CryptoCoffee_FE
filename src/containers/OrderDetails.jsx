@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { 
     SafeAreaView,
     StyleSheet,
@@ -8,8 +8,9 @@ import {
     Dimensions
 } from "react-native";
 import CustomButton from "../components/CustomButton";
+import IceAndHotButton from "../components/IceAndHotButton";
 
-const OrderDetails = ({price}) => {
+const OrderDetails = ({ price, menu }) => {
     const screenWidth = Dimensions.get('window').width;
 
     return(
@@ -23,23 +24,22 @@ const OrderDetails = ({price}) => {
                     resizeMode={'contain'}
                     style={styles.coffeeImageStyle}
                 ></Image>
-                <Text style={styles.coffeeTextStyle}>브루드 커피</Text>
+                <Text style={styles.coffeeTextStyle}>{menu}</Text>
 
                 <View style={styles.iceAndHotContainer}>
-                    <Text style={{ fontSize:15, fontWeight: 'medium', marginLeft: 5 }}> ICE & HOT </Text>
-                    <View style={styles.selectContainer}>
-                        <CustomButton title='ICE' width={157} height={35.23} weight={'bold'} />
-                        <CustomButton title='HOT' width={157} height={35.23} weight={'bold'} />
-                    </View>
+                    <Text style={{ fontSize:15, fontWeight: 'medium', marginLeft: 10, marginBottom: 20 }}> ICE & HOT </Text>
+                    <IceAndHotButton />
                 </View>
 
-                <View style={{ alignItems: 'center' }}>
+                <View style={{ marginTop: 220 }}>
                     <View style={[ styles.priceLineStyle, { width: screenWidth }]} />
-                    <View style={[ styles.priceDescriptionContainer, { alignItems: 'flex-start' } ]}>
-                        <Text style={[  { fontSize: 14, color: '#AFAFAF' } ]}>주문금액</Text>
-                        <Text style={[ styles.priceLayout, { fontSize: 14, fontWeight: 'bold' }]}>{price}원</Text>
+                    <View style={ styles.priceDescriptionContainer}>
+                        <Text style={{ fontSize: 14, color: '#AFAFAF', marginRight: 250 }}>주문금액</Text>
+                        <Text style={{ fontSize: 14, fontWeight: 'bold'}}>{price}원</Text>
                     </View>
-                    <CustomButton title={'주문하기'} height={44.55} width={358} weight={'bold'} />
+                    <View style={{ alignItems: 'center', marginTop: 32, marginBottom: 10}}>
+                        <CustomButton title={'주문하기'} height={44.55} width={358} weight={'bold'} />
+                    </View>
                 </View>
             </View>  
         </SafeAreaView>
@@ -76,11 +76,6 @@ const styles = StyleSheet.create({
         marginTop:57
     },
 
-    selectContainer: {
-        flexDirection: 'row',
-        marginTop: 25
-    },
-
     priceLineStyle: {
         height: 1,
         backgroundColor: '#AFAFAF',
@@ -90,10 +85,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 14,
         marginLeft: 17,
-    },
-
-    priceLayout: {
-        // marginRight: 10
     },
 });
 

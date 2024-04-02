@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         marginTop: 26,
+        justifyContent: 'center'
     }
 });
 
