@@ -12,7 +12,7 @@ import OrderDetails from './src/containers/OrderDetails';
 
 const App = () => {
   return (
-    <AuthMember  />
+    <OrderDetails price={'1800'} />
   );
 }
 
