@@ -5,35 +5,37 @@ import {
   Text,
   StyleSheet
 } from "react-native"; 
+
 import CryptoCoffeeButton from "../components/CryptoCoffeeButton";
 
 const Home = () => {
   return(
     <SafeAreaView>
       <View style={styles.topContainer}>
-        <Text style={{ fontSize: 26, fontWeight: 'bold' }}> CryptoCoffee </Text>
+        <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
       </View>    
 
       <View style={styles.buttonContainer}> 
-        <CryptoCoffeeButton title="주문하기" image="../../asset/Vector.png"/>
-        <CryptoCoffeeButton title="쿠폰사용" image="../../asset/Coupon.png"/>
+        <CryptoCoffeeButton title="주문하기" />
+        <CryptoCoffeeButton title="쿠폰사용" />
       </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-    topContainer: {
-      marginTop: 20,
-      marginLeft: 20,
-      marginRight: 20,
-      marginBottom: 50,
-      flexDirection: 'row' 
-    },
+  topContainer: {
+    marginTop: 20,
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 47,
+    flexDirection: 'row' 
+  },
 
-    buttonContainer: {
-      flexDirection: 'row'
-    }
-  });
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center'
+  }
+});
 
 export default Home; 

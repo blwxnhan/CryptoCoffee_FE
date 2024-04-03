@@ -5,29 +5,26 @@ import {
   StyleSheet 
 } from "react-native";
 
-const CustomButton = (props) =>{
+const CustomButton = ({ title, width, height, weight }) =>{
     return(
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>{props.title}</Text>
+        <TouchableOpacity style={[ styles.button, {width: width, height: height} ]}>
+          <Text style={[styles.buttonText, {fontWeight: weight}]}>{title}</Text>
         </TouchableOpacity>
     );
 }
 
 const styles = StyleSheet.create({
     button: {
-      paddingVertical: 15,
-      paddingHorizontal: 30,
+      justifyContent: 'center',
       borderRadius: 10,
       backgroundColor: '#274e13',
-      width: 257,
-      alignItems: "center",
-      marginTop: 10
+      alignItems: 'center',
+      margin: 5
     },
   
     buttonText: {
-      color: '#fff', 
+      color: '#ffffff', 
       fontSize: 15,
-      fontWeight: 'medium',
     },
 });
 

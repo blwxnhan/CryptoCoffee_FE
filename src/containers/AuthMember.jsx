@@ -13,7 +13,7 @@ const AuthMember = () => {
   return (
     <SafeAreaView>
       <View style={styles.topContainer}>
-        <Text style={{ fontSize: 26, fontWeight: 'bold' }}> CryptoCoffee </Text>
+        <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
       </View>
       
       <View style={styles.descriptionContainer}>
@@ -24,7 +24,7 @@ const AuthMember = () => {
         <CustomInputField inputDescription="사원번호" placeholderText="사원번호를 입력하세요."/>
         <CustomInputField inputDescription="이메일" placeholderText="이메일을 입력하세요."/>
         <CustomInputField inputDescription="닉네임" placeholderText="사용하실 닉네임을 입력하세요." />
-        <CustomButton title="구성원 인증"/>
+        <CustomButton title="구성원 인증" width={257} height={41.51} weight={'medium'}/>
       </View>
     </SafeAreaView>
   );

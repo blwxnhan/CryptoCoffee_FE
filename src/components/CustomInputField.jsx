@@ -1,5 +1,10 @@
 import React from "react";
-import { StyleSheet, TextInput, Text, View } from "react-native";
+import { 
+  StyleSheet, 
+  TextInput, 
+  Text, 
+  View 
+} from "react-native";
 
 const CustomInputField = (props) => {
     return(
@@ -17,10 +22,9 @@ const styles = StyleSheet.create({
     },
   
     inputStyle: {
-      marginTop: 10,
       marginLeft: 7,
       borderBottomWidth: 1,
-      width: 270,
+      width: 257,
       height: 40
     },
 });
