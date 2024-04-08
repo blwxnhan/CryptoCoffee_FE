@@ -14,24 +14,26 @@ const OrderDetails = ({ price, menu }) => {
     const screenWidth = Dimensions.get('window').width;
 
     return(
-        <SafeAreaView>
-            <View style={styles.topContainer}>
-                 <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
-            </View> 
-            <View style={styles.container}>
-                <Image 
-                    source={require("../../asset/Cup.png")}
-                    resizeMode={'contain'}
-                    style={styles.coffeeImageStyle}
-                ></Image>
-                <Text style={styles.coffeeTextStyle}>{menu}</Text>
+        <>
+            <SafeAreaView />
+                <View style={styles.topContainer}>
+                    <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
+                </View> 
+                <View style={styles.container}>
+                    <Image 
+                        source={require("../../asset/Cup.png")}
+                        resizeMode={'contain'}
+                        style={styles.coffeeImageStyle}
+                    ></Image>
+                    <Text style={styles.coffeeTextStyle}>{menu}</Text>
 
-                <View style={styles.iceAndHotContainer}>
-                    <Text style={{ fontSize:15, fontWeight: 'medium', marginLeft: 10, marginBottom: 20 }}> ICE & HOT </Text>
-                    <IceAndHotButton />
+                    <View style={styles.iceAndHotContainer}>
+                        <Text style={{ fontSize:15, fontWeight: 'medium', marginLeft: 10, marginBottom: 20 }}> ICE & HOT </Text>
+                        <IceAndHotButton />
+                    </View>
                 </View>
 
-                <View style={{ marginTop: 220 }}>
+                <View style={{ position: 'absolute', bottom: 30 }}>
                     <View style={[ styles.priceLineStyle, { width: screenWidth }]} />
                     <View style={ styles.priceDescriptionContainer}>
                         <Text style={{ fontSize: 14, color: '#AFAFAF', marginRight: 250 }}>주문금액</Text>
@@ -41,8 +43,9 @@ const OrderDetails = ({ price, menu }) => {
                         <CustomButton title={'주문하기'} height={44.55} width={358} weight={'bold'} />
                     </View>
                 </View>
-            </View>  
-        </SafeAreaView>
+            <SafeAreaView />
+        </>
+
     );
 }
 

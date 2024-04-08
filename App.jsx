@@ -11,9 +11,9 @@ import OrderDetails from './src/containers/OrderDetails';
 const App = () => {
   return (
     <>
-      {/* <OrderDetails menu={'브루드 커피'} price={'1800'} /> */}
+      <OrderDetails menu={'브루드 커피'} price={'1800'} />
       {/* <AuthMember /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <Order /> */}
     </>
   );
