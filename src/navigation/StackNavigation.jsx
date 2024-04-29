@@ -12,8 +12,8 @@ const StackNavigation = () => {
         <Stack.Navigator initialRouteName={"auth"} screenOptions={{ headerShown: false }}>
             <Stack.Screen name="home" component={Home} />
             <Stack.Screen name="order" component={Order} />
-            <Stack.Screen name="orderDetails" component={OrderDetails}/>
-            <Stack.Screen name="auth" component={AuthMember}/>
+            <Stack.Screen name="orderDetails" component={OrderDetails} />
+            <Stack.Screen name="auth" component={AuthMember} />
         </Stack.Navigator>
     );
 }

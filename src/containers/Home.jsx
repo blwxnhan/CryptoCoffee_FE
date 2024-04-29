@@ -22,7 +22,7 @@ const Home = ({navigation}) => {
         />
         <CryptoCoffeeButton 
           title="쿠폰사용"
-          onPress={() => navigation.navigate("order")} />
+        />
       </View>
     </SafeAreaView>
   );
