@@ -6,11 +6,11 @@ import {
     Text
 } from "react-native"; 
 
-const CryptoCoffeeButton = (props) => {
+const CryptoCoffeeButton = props => {
     return(
         <TouchableOpacity 
             style={styles.button}
-            onPress={() => (props.event)}
+            onPress={() => props.onPress()}
         >
             <Image 
                 style={styles.buttonImage} 

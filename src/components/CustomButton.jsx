@@ -5,11 +5,14 @@ import {
   StyleSheet 
 } from "react-native";
 
-const CustomButton = ({ title, width, height, weight }) =>{
+const CustomButton = props => {
     return(
-        <TouchableOpacity style={[ styles.button, {width: width, height: height} ]}>
-          <Text style={[styles.buttonText, {fontWeight: weight}]}>{title}</Text>
-        </TouchableOpacity>
+      <TouchableOpacity 
+        style={[ styles.button, {width: props.width, height: props.height} ]} 
+        onPress={() => props.onPress()}
+      >
+        <Text style={[styles.buttonText, {fontWeight: props.weight}]}>{props.title}</Text>
+      </TouchableOpacity>
     );
 }
 
