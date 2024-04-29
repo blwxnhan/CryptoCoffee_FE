@@ -24,7 +24,13 @@ const AuthMember = ({navigation}) => {
         <CustomInputField inputDescription="사원번호" placeholderText="사원번호를 입력하세요."/>
         <CustomInputField inputDescription="이메일" placeholderText="이메일을 입력하세요."/>
         <CustomInputField inputDescription="닉네임" placeholderText="사용하실 닉네임을 입력하세요." />
-        <CustomButton title="구성원 인증" width={257} height={41.51} weight={'medium'} onPress={() => navigation.navigate("home")} />
+        <CustomButton 
+          title="구성원 인증" 
+          width={257} 
+          height={41.51} 
+          weight={'medium'} 
+          onPress={() => navigation.navigate("home")} 
+        />
       </View>
     </SafeAreaView>
   );

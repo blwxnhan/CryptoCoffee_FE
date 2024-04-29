@@ -6,11 +6,19 @@ import {
 
 import CryptoCoffeeButton from "../../components/CryptoCoffeeButton";
 
-const OrderNonCoffee = () => {
+const OrderNonCoffee = ({navigation}) => {
     return(
         <View style={styles.buttonContainer}>
-            <CryptoCoffeeButton title="핫초코" price="2400원" />
-            <CryptoCoffeeButton title="허니밀크티" price="1800원"/>
+            <CryptoCoffeeButton 
+                title="핫초코" 
+                price="2400원" 
+                onPress={() => navigation.navigate("orderDetails")} 
+            />
+            <CryptoCoffeeButton 
+                title="허니밀크티" 
+                price="1800원" 
+                onPress={() => navigation.navigate("orderDetails")} 
+            />
         </View>       
     );
 }
