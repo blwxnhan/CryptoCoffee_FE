@@ -10,7 +10,7 @@ const CryptoCoffeeButton = (props) => {
     return(
         <TouchableOpacity 
             style={styles.button}
-            // onPress={() => (alert("Click!"))}
+            onPress={() => (props.event)}
         >
             <Image 
                 style={styles.buttonImage} 
