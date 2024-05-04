@@ -11,10 +11,10 @@ import MyTabs from "../components/MyTabs";
 const Order = () => {
     return(
         <>
-        {/* <SafeAreaView />  */}
-        {/* <View style={styles.topContainer}>
+        <SafeAreaView /> 
+        <View style={styles.topContainer}>
             <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
-        </View>  */}
+        </View> 
         <MyTabs />
         </>
     );
