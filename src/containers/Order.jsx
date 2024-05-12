@@ -6,16 +6,16 @@ import {
     View
 } from "react-native";
 
-import MyTabs from "../components/MyTabs";
+import TabNavigation from "../navigation/TabNavigation";
 
 const Order = () => {
     return(
         <>
-            <SafeAreaView />
+        <SafeAreaView  style={{ backgroundColor: 'white'}} />
             <View style={styles.topContainer}>
-                 <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
-            </View> 
-            <MyTabs />
+                <Text style={{ fontSize: 26, fontWeight: 900 }}> CryptoCoffee </Text>
+            </View>
+            <TabNavigation />
         </>
     );
 }

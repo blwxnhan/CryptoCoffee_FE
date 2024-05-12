@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 const IceAndHotButton = () => {
-    const [selectessdButton, setSelectedButton] = useState('ICE'); // 선택된 버튼 상태를 저장
+    const [selectedButton, setSelectedButton] = useState('ICE'); // 선택된 버튼 상태를 저장
 
     const handleButtonPress = (buttonType) => {
         setSelectedButton(buttonType); // 선택된 버튼을 업데이트
