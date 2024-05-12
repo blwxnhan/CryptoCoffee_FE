@@ -8,7 +8,7 @@ import {
 
 import CryptoCoffeeButton from "../components/CryptoCoffeeButton";
 
-const Home = ({navigation}) => {
+const Home = ({navigation: {navigate}}) => {
   return(
     <SafeAreaView>
       <View style={styles.topContainer}>
@@ -17,11 +17,13 @@ const Home = ({navigation}) => {
 
       <View style={styles.buttonContainer}> 
         <CryptoCoffeeButton 
-          title="주문하기" 
-          onPress={() => navigation.navigate("order")} 
+          title="주문하기"
+          price="" 
+          onPress={() => navigate('StackNavigation', {screen: 'Order'})} 
         />
         <CryptoCoffeeButton 
           title="쿠폰사용"
+          price="" 
         />
       </View>
     </SafeAreaView>

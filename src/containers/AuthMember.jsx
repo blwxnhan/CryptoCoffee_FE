@@ -9,7 +9,7 @@ import {
 import CustomButton from '../components/CustomButton';
 import CustomInputField from '../components/CustomInputField';
 
-const AuthMember = ({navigation}) => {
+const AuthMember = ({navigation: {navigate}}) => {
   return (
     <SafeAreaView>
       <View style={styles.topContainer}>
@@ -29,7 +29,7 @@ const AuthMember = ({navigation}) => {
           width={257} 
           height={41.51} 
           weight={'medium'} 
-          onPress={() => navigation.navigate("home")} 
+          onPress={() => navigate('StackNavigation', {screen: 'Home'})} 
         />
       </View>
     </SafeAreaView>

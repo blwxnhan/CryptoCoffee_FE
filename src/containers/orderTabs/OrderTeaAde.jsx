@@ -6,18 +6,18 @@ import {
 
 import CryptoCoffeeButton from "../../components/CryptoCoffeeButton";
 
-const OrderTeaAde = ({navigation}) => {
+const OrderTeaAde = ({navigation: {navigate}}) => {
     return(
         <View style={styles.buttonContainer}>
             <CryptoCoffeeButton 
                 title="허니 유자" 
                 price="2200원" 
-                onPress={() => navigation.navigate("orderDetails")} 
+                onPress={() => navigate('StackNavigation', {screen: 'OrderDetails'})} 
             />
             <CryptoCoffeeButton 
                 title="핑크 자몽 블랙티" 
                 price="2700원" 
-                onPress={() => navigation.navigate("orderDetails")} 
+                onPress={() => navigate('StackNavigation', {screen: 'OrderDetails'})} 
             />
         </View>       
     );

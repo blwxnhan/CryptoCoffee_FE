@@ -9,11 +9,11 @@ const Stack = createStackNavigator();
 
 const StackNavigation = () => {
     return (
-        <Stack.Navigator initialRouteName={"auth"} screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="home" component={Home} />
-            <Stack.Screen name="order" component={Order} />
-            <Stack.Screen name="orderDetails" component={OrderDetails} />
-            <Stack.Screen name="auth" component={AuthMember} />
+        <Stack.Navigator initialRouteName={"Auth"} screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Auth" component={AuthMember} />
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Order" component={Order} />
+            <Stack.Screen name="OrderDetails" component={OrderDetails} />
         </Stack.Navigator>
     );
 }

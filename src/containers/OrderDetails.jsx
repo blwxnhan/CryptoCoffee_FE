@@ -10,7 +10,7 @@ import {
 import CustomButton from "../components/CustomButton";
 import IceAndHotButton from "../components/IceAndHotButton";
 
-const OrderDetails = ({ price, menu }) => {
+const OrderDetails = ({navigation: {navigate}}) => {
     const screenWidth = Dimensions.get('window').width;
 
     return(
@@ -25,7 +25,7 @@ const OrderDetails = ({ price, menu }) => {
                         resizeMode={'contain'}
                         style={styles.coffeeImageStyle}
                     ></Image>
-                    <Text style={styles.coffeeTextStyle}>{menu}</Text>
+                    <Text style={styles.coffeeTextStyle}>브루드 커피</Text>
 
                     <View style={styles.iceAndHotContainer}>
                         <Text style={{ fontSize:15, fontWeight: 'medium', marginLeft: 10, marginBottom: 20 }}> ICE & HOT </Text>
@@ -37,15 +37,20 @@ const OrderDetails = ({ price, menu }) => {
                     <View style={[ styles.priceLineStyle, { width: screenWidth }]} />
                     <View style={ styles.priceDescriptionContainer}>
                         <Text style={{ fontSize: 14, color: '#AFAFAF', marginRight: 250 }}>주문금액</Text>
-                        <Text style={{ fontSize: 14, fontWeight: 'bold'}}>{price}원</Text>
+                        <Text style={{ fontSize: 14, fontWeight: 'bold'}}>1800원</Text>
                     </View>
                     <View style={{ alignItems: 'center', marginTop: 32, marginBottom: 10}}>
-                        <CustomButton title={'주문하기'} height={44.55} width={358} weight={'bold'} />
+                        <CustomButton 
+                            title={'주문하기'} 
+                            height={44.55} 
+                            width={358} 
+                            weight={'bold'}
+                            onPress={() => navigate('StackNavigation', {screen: 'Home'})} 
+                        />
                     </View>
                 </View>
             <SafeAreaView />
         </>
-
     );
 }
 

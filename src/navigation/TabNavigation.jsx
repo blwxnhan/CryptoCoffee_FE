@@ -1,21 +1,20 @@
 import React from "react";
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import OrderCoffee from "../containers/orderTabs/OrderCoffee";
 import OrderTeaAde from "../containers/orderTabs/OrderTeaAde";
 import OrderNonCoffee from "../containers/orderTabs/OrderNonCoffee";
-import { TabBarItem } from "react-native-tab-view";
+import { SafeAreaView } from "react-native";
 
 const Tab = createMaterialTopTabNavigator();
 
-const MyTabs = () => {
+const TabNavigation = () => {
   return (
     <Tab.Navigator 
-        initialRouteName="커피"
         screenOptions={{
             tabBarLabelStyle: { fontSize: 15, fontWeight: 'medium' },
-            tabBarIndicatorStyle: { backgroundColor: 'black' }
+            tabBarIndicatorStyle: { backgroundColor: 'black' },
         }}
     >
       <Tab.Screen name="커피" component={OrderCoffee} />
@@ -25,10 +24,4 @@ const MyTabs = () => {
   );
 }
 
-export default function () {
-    return (
-        <NavigationContainer>
-            <MyTabs />
-        </NavigationContainer>
-    );
-}
+export default TabNavigation;
